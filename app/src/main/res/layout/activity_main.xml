@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F60B5B"
+    tools:context=".MainActivity">
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="250dp"
+      android:layout_marginTop="32dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:src="@drawable/ic_undraw_compose_music_ovo2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/background"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/pause"
+            android:textColor="@color/black"
+            android:onClick="onPause"
+            android:layout_marginLeft="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/white"
+            android:onClick="onPlay"
+            android:background="@drawable/play"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@drawable/stop"
+            android:textColor="@color/black"
+            android:padding="8dp"
+            android:onClick="onStop"
+            android:textAllCaps="true"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:background="@drawable/card"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent" >
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/italiana"
+            android:gravity="center"
+            android:text="Free Music"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#F60B5B"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/love" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
